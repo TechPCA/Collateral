@@ -1,29 +1,66 @@
+<!--
+  History:
+  + v0.2 - Lie - Added email addresses and links to GitHub
+  + v0.1 -- Lie -- #firstCommit
+-->
 <html>
 <head>
-    <title>TechPCA.org Website v0.1 -- Welcome!</title>
+    <title>TechPCA.org Website v0.2 -- Welcome!</title>
 </head>
+
 
 <body>
 
 <div align="center">
     <img width="200px" height="200px" border="2" src="https://s3-us-west-2.amazonaws.com/techpca-public/group/FC210BA9-8BBA-4B05-BA2F-349F07D7F8C0/Logo-TechPCA-v0_1--1024x1024.png">
-    <h1>TechPCA.org Website v0.1</h1>
+    
+    
+    <h1>Hello World!  This is the TechPCA.org Website v0.2</h1>
 
     <br/>
     <br/>
 
-    <h3>Hello World!  This is the TechPCA.org Website v0.1</h3>
-
-    <br/>
-    <br/>
 
     <h2>
+The Technology Peace Corps Association is a group of Peace Corps Volunteers (PCVs), Returned Peace Corps Volunteers (RPCVs), Host-Country Nationals (HCNs), and kindred spirits who have banded together to provide technology solutions, support, training, and services to those who support the mission of the Peace Corps.</h2>
+
+    <br/>
+    <h2>
+Membership is free.  If you'd like to help out join us:  <a href="mailto:Membership@TechPCA.org?subject:Join">Membership@TechPCA.org</a>
+		</h2>
+    <br/>
+    <br/>
+    <h2>
+Are you a PCV, RPCV, or HCN that needs help?  Please ask!  We can't do everything, but we'll do what we can:  <a href="mailto:Support@TechPCA.org?subject:Support Request">Support@TechPCA.org</a>
+		</h2>
+    <br/>
+    <br/>
+    <h2>
+Can't help with time but able to help us cover costs?  All donations will be tax-deductable:  <a href="mailto:Donate@TechPCA.org?subject:Donation">Donate@TechPCA.org</a>
+		</h2>
+    <br/>
+    <br/>
+
+    <br/>
+    <h2>
+Most of what we do is open source, here's our GitHub:  <a href="https://github.com/TechPCA/">https://github.com/TechPCA/</a>
+   </h2>
+    <br/>
+    <br/>
+
+    <h3>
 This File is static HTML stored in a S3 bucket served by a AWS Lambda function deployed automatically using the serverless framework.
-    </h2>
+    </h3>
 
     <br/>
     <br/>
+    <p>
+TODO: have this file dynamically generated through a series of both async and synchronous lambda functions that trigger when the URL is caled and API Gateway redirects to a generic call that passes in the UUID of this group to a lambda function that pulls the group's display instructions in JSON from DynamoDB and then links with assets from S3 that are merged together to generate a page for the group dynamically in a way that is instantously usable for every other group on the system.
+		<p>
+
     <br/>
+    <br/>
+
 
     <p>
     <h1>This site is "Under Construction"...</h1>
